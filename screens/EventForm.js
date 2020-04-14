@@ -65,8 +65,18 @@ class EventForm extends Component {
             })
     };*/
 
+    openAlert = () => {
+        alert('Congrats! You got an achievement.');
+    };
+
     handleAddPress = () => {
         this.props.navigation.goBack('list');
+
+    };
+
+    buttonFunction = () => {
+        this.openAlert();
+        this.handleAddPress();
     };
 
     handleChangeTitle = (value) => {
@@ -132,7 +142,7 @@ class EventForm extends Component {
 
                     </View>
                     <TouchableHighlight
-                        onPress={this.handleAddPress}
+                        onPress={this.buttonFunction}
                         style={styles.button}
                     >
                         <Text style={styles.buttonText}>Add Event</Text>
