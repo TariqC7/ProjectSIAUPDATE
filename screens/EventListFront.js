@@ -66,6 +66,15 @@ class EventListFront extends Component {
         this.props.navigation.navigate('form')
     };
 
+    openAlert = () => {
+        alert('You can get an achievement by adding an event.');
+    };
+
+    buttonFunction = () => {
+        this.openAlert();
+        //this.handleAddPress();
+    };
+
     render() {
         return (
              
@@ -80,8 +89,8 @@ class EventListFront extends Component {
                 <ActionButton
                     key="fab"
                 buttonColor="#FF0000"
-                    //this button doesn't work because of a navigation issue
-                    onPress={this.handleAddEvent}
+                    //the handleAddEvent function doesn't work because of a navigation issue
+                    onPress={this.buttonFunction}
                 />
         
         );
