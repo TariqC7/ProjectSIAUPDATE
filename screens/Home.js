@@ -30,7 +30,7 @@ class Home extends Component {
   };*/
 
   handleSeeEvents = () => {
-    this.props.navigation.navigate('list')
+    this.props.navigation.navigate('Events')
   };
 
   componentWillMount() {
