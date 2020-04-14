@@ -80,6 +80,7 @@ class EventListFront extends Component {
                 <ActionButton
                     key="fab"
                 buttonColor="#FF0000"
+                    //this button doesn't work because of a navigation issue
                     onPress={this.handleAddEvent}
                 />
         
